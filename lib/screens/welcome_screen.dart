@@ -30,7 +30,7 @@ class _WelcomeScreenState extends State<WelcomeScreen> {
         leading: Padding(
           padding: const EdgeInsets.fromLTRB(8, 1, 1, 1),
           child: Image.asset(
-            'assets/images/dcu-logo.png',
+            'assets/images/church.png',
             fit: BoxFit.contain,
             height: 25,
           ),

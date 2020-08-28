@@ -21,7 +21,7 @@ class _LoginScreenState extends State<LoginScreen> implements HttpCallBack {
   final Color primaryColor = Color(0xff18203d);
   final Color secondaryColor = Color(0xff232c51);
 
-  final Color logoGreen = Color(0xff25bcbb);
+  final Color logoGreen = Color(0xffff7f00);
 
 //declare variables ........................
   String mobile;
@@ -130,7 +130,7 @@ class _LoginScreenState extends State<LoginScreen> implements HttpCallBack {
                 crossAxisAlignment: CrossAxisAlignment.center,
                 children: <Widget>[
                   Image.asset(
-                    'assets/images/dcu-logo.png',
+                    'assets/images/church.png',
                     height: 100,
                   ),
                   SizedBox(
@@ -138,9 +138,9 @@ class _LoginScreenState extends State<LoginScreen> implements HttpCallBack {
                   ),
                   //Texts and Styling of them
                   Text(
-                    'Welcome to DC Utawala',
+                    'Christian Church Kenya',
                     textAlign: TextAlign.center,
-                    style: TextStyle(color: Colors.white, fontSize: 20),
+                    style: TextStyle(color: Color(0xffff7f00), fontSize: 20),
                   ),
                   SizedBox(height: 10),
                   Text(
@@ -158,7 +158,7 @@ class _LoginScreenState extends State<LoginScreen> implements HttpCallBack {
                     padding: EdgeInsets.symmetric(horizontal: 10, vertical: 5),
                     decoration: BoxDecoration(
                         color: secondaryColor,
-                        border: Border.all(color: Colors.blue),
+                        border: Border.all(color: Color(0xffff7f00)),
                         borderRadius: BorderRadius.circular(20)),
                     child: TextFormField(
                       obscureText: false,
@@ -186,7 +186,7 @@ class _LoginScreenState extends State<LoginScreen> implements HttpCallBack {
                     padding: EdgeInsets.symmetric(horizontal: 10, vertical: 5),
                     decoration: BoxDecoration(
                         color: secondaryColor,
-                        border: Border.all(color: Colors.blue),
+                        border: Border.all(color: Color(0xffff7f00)),
                         borderRadius: BorderRadius.circular(20)),
                     child: TextFormField(
                       obscureText: true,
@@ -243,7 +243,7 @@ class _LoginScreenState extends State<LoginScreen> implements HttpCallBack {
                             },
                           );
                         },
-                        color: logoGreen,
+                        color: Color(0xffff7f00),
                         child: Text(
                           'Login',
                           style: GoogleFonts.openSans(
@@ -268,7 +268,7 @@ class _LoginScreenState extends State<LoginScreen> implements HttpCallBack {
                               'password?',
                               textAlign: TextAlign.center,
                               style: GoogleFonts.openSans(
-                                  color: logoGreen,
+                                  color: Color(0xffff7f00),
                                   fontSize: 14,
                                   fontWeight: FontWeight.w700),
                             ),
@@ -301,7 +301,7 @@ class _LoginScreenState extends State<LoginScreen> implements HttpCallBack {
                           'SignUp',
                           textAlign: TextAlign.center,
                           style: GoogleFonts.openSans(
-                              color: logoGreen,
+                              color: Color(0xffff7f00),
                               fontSize: 14,
                               fontWeight: FontWeight.w700),
                         ),
@@ -340,7 +340,7 @@ class _LoginScreenState extends State<LoginScreen> implements HttpCallBack {
         // SizedBox(
         //   width: 10,
         // ),
-        Text('Deliverance Church Utawala',
+        Text('CHRISTIAN CHURCH KENYA',
             textAlign: TextAlign.center,
             style: GoogleFonts.openSans(
                 color: Colors.white,

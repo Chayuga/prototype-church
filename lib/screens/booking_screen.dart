@@ -229,7 +229,7 @@ class BookASeatState extends State<BookASeat> implements HttpCallBack {
         leading: Padding(
           padding: const EdgeInsets.fromLTRB(8, 1, 1, 1),
           child: Image.asset(
-            'assets/images/dcu-logo.png',
+            'assets/images/church.png',
             fit: BoxFit.contain,
             height: 25,
           ),
@@ -287,7 +287,7 @@ class BookASeatState extends State<BookASeat> implements HttpCallBack {
                                       padding: const EdgeInsets.all(8.0),
                                       child: Center(
                                         child: Text(
-                                          "Deliverance Church Utawala\nSeating Structure",
+                                          "Christians Church Kenya\nSeating Structure",
                                           textAlign: TextAlign.center,
                                           style: GoogleFonts.openSans(
                                               color: Colors.black87,
@@ -544,7 +544,8 @@ class BookASeatState extends State<BookASeat> implements HttpCallBack {
                                     ),
                                   ],
                                 )
-                              : Center(child: Text("DC CHURCH UTAWALA")),
+                              : Center(
+                                  child: Text("SELECT SERVICE TO OPEN SEATS")),
                         ),
                       ),
                     ),

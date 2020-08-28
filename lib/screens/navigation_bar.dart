@@ -1,3 +1,4 @@
+import 'package:churchapp/mpesa/mpesa_page.dart';
 import 'package:churchapp/screens/status_screen.dart';
 import 'package:churchapp/screens/welcome_screen.dart';
 import 'package:flutter/material.dart';
@@ -16,8 +17,8 @@ class _MyNavBarState extends State<MyNavBar> {
   int _selectedIndex = 0;
   static List<Widget> _pages = <Widget>[
     //Add pages to appear on the App, via Navigation Bar
-    WelcomeScreen(),
     BookASeat(),
+    MpesaPage(),
     BookingStatus(),
   ];
 
@@ -36,12 +37,12 @@ class _MyNavBarState extends State<MyNavBar> {
       bottomNavigationBar: BottomNavigationBar(
         items: const <BottomNavigationBarItem>[
           BottomNavigationBarItem(
-            icon: Icon(Icons.sentiment_very_satisfied),
-            title: Text('Welcome'),
-          ),
-          BottomNavigationBarItem(
             icon: Icon(Icons.event_note),
             title: Text('Reservation'),
+          ),
+          BottomNavigationBarItem(
+            icon: Icon(Icons.account_balance_wallet),
+            title: Text('Give'),
           ),
           BottomNavigationBarItem(
             icon: Icon(Icons.history),

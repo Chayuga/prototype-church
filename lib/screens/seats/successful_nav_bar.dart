@@ -50,6 +50,10 @@ class _SuccessfulNavBarState extends State<SuccessfulNavBar> {
             icon: Icon(Icons.history),
             title: Text('Status'),
           ),
+          BottomNavigationBarItem(
+            icon: Icon(Icons.account_balance_wallet),
+            title: Text('Give'),
+          ),
         ],
         currentIndex: _selectedIndex,
         selectedItemColor: Colors.teal,

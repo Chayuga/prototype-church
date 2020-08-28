@@ -20,7 +20,7 @@ class _SignUpScreenState extends State<SignUpScreen> implements HttpCallBack {
   final Color primaryColor = Color(0xff18203d);
   final Color secondaryColor = Color(0xff232c51);
 
-  final Color logoGreen = Color(0xff25bcbb);
+  final Color logoGreen = Color(0xffff7f00);
 
   //declare variables ........................
   String mobile;
@@ -120,14 +120,14 @@ class _SignUpScreenState extends State<SignUpScreen> implements HttpCallBack {
               crossAxisAlignment: CrossAxisAlignment.center,
               children: <Widget>[
                 Text(
-                  'Sign in to DCU and continue',
+                  'Sign up to continue',
                   textAlign: TextAlign.center,
                   style:
                       GoogleFonts.openSans(color: Colors.white, fontSize: 25),
                 ),
                 SizedBox(height: 10),
                 Text(
-                  'Enter your Phone number, Email address and password below to continue to the Deliverance Church Int\'l Utawala!',
+                  'Enter your Phone number, Email address and password below to continue to the Christians Church!',
                   textAlign: TextAlign.center,
                   style:
                       GoogleFonts.openSans(color: Colors.white, fontSize: 14),
@@ -137,7 +137,7 @@ class _SignUpScreenState extends State<SignUpScreen> implements HttpCallBack {
                   padding: EdgeInsets.symmetric(horizontal: 10, vertical: 5),
                   decoration: BoxDecoration(
                       // color: secondaryColor,
-                      border: Border.all(color: Colors.blue),
+                      border: Border.all(color: Color(0xffff7f00)),
                       borderRadius: BorderRadius.circular(20)),
                   child: TextFormField(
                     obscureText: false,
@@ -165,7 +165,7 @@ class _SignUpScreenState extends State<SignUpScreen> implements HttpCallBack {
                   padding: EdgeInsets.symmetric(horizontal: 10, vertical: 5),
                   decoration: BoxDecoration(
                       // color: secondaryColor,
-                      border: Border.all(color: Colors.blue),
+                      border: Border.all(color: Color(0xffff7f00)),
                       borderRadius: BorderRadius.circular(20)),
                   child: TextFormField(
                     onSaved: (val) => email = val,
@@ -193,7 +193,7 @@ class _SignUpScreenState extends State<SignUpScreen> implements HttpCallBack {
                   padding: EdgeInsets.symmetric(horizontal: 10, vertical: 5),
                   decoration: BoxDecoration(
                       // color: secondaryColor,
-                      border: Border.all(color: Colors.blue),
+                      border: Border.all(color: Color(0xffff7f00)),
                       borderRadius: BorderRadius.circular(20)),
                   child: TextFormField(
                     onSaved: (val) => password = val,
@@ -221,7 +221,7 @@ class _SignUpScreenState extends State<SignUpScreen> implements HttpCallBack {
                   padding: EdgeInsets.symmetric(horizontal: 10, vertical: 5),
                   decoration: BoxDecoration(
                       // color: secondaryColor,
-                      border: Border.all(color: Colors.blue),
+                      border: Border.all(color: Color(0xffff7f00)),
                       borderRadius: BorderRadius.circular(20)),
                   child: TextFormField(
                     obscureText: true,
@@ -312,7 +312,7 @@ class _SignUpScreenState extends State<SignUpScreen> implements HttpCallBack {
                         );
                       },
 
-                      color: logoGreen,
+                      color: Color(0xffff7f00),
                       child: Text(
                         'Register',
                         style: GoogleFonts.openSans(
@@ -344,7 +344,7 @@ class _SignUpScreenState extends State<SignUpScreen> implements HttpCallBack {
                           'SignIn',
                           textAlign: TextAlign.center,
                           style: GoogleFonts.openSans(
-                              color: logoGreen,
+                              color: Color(0xffff7f00),
                               fontSize: 14,
                               fontWeight: FontWeight.w700),
                         ),
@@ -428,13 +428,13 @@ _buildFooterLogo() {
     mainAxisAlignment: MainAxisAlignment.center,
     children: <Widget>[
       Image.asset(
-        'assets/images/dcu-logo.png',
+        'assets/images/church.png',
         height: 40,
       ),
       SizedBox(
         height: 10,
       ),
-      Text('Deliverance Church Utawala',
+      Text('CHRISTIANS CHURCH KENYA',
           textAlign: TextAlign.center,
           style: GoogleFonts.openSans(
               color: Colors.white, fontSize: 20, fontWeight: FontWeight.w300)),

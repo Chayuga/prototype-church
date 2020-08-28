@@ -129,7 +129,7 @@ class _ResetPasswordState extends State<ResetPassword> implements HttpCallBack {
                 crossAxisAlignment: CrossAxisAlignment.center,
                 children: <Widget>[
                   Image.asset(
-                    'assets/images/dcu-logo.png',
+                    'assets/images/church.png',
                     height: 100,
                   ),
                   SizedBox(
@@ -137,7 +137,7 @@ class _ResetPasswordState extends State<ResetPassword> implements HttpCallBack {
                   ),
                   //Texts and Styling of them
                   Text(
-                    'Deliverance Church Int\'l Utawala ',
+                    'Christians Church - Kenya ',
                     textAlign: TextAlign.center,
                     style:
                         GoogleFonts.openSans(color: Colors.white, fontSize: 18),
@@ -158,7 +158,7 @@ class _ResetPasswordState extends State<ResetPassword> implements HttpCallBack {
                     padding: EdgeInsets.symmetric(horizontal: 10, vertical: 5),
                     decoration: BoxDecoration(
                         color: secondaryColor,
-                        border: Border.all(color: Colors.blue),
+                        border: Border.all(color: Color(0xffff7f00)),
                         borderRadius: BorderRadius.circular(20)),
                     child: TextFormField(
                       obscureText: false,
@@ -186,7 +186,7 @@ class _ResetPasswordState extends State<ResetPassword> implements HttpCallBack {
                     padding: EdgeInsets.symmetric(horizontal: 10, vertical: 5),
                     decoration: BoxDecoration(
                         color: secondaryColor,
-                        border: Border.all(color: Colors.blue),
+                        border: Border.all(color: Color(0xffff7f00)),
                         borderRadius: BorderRadius.circular(20)),
                     child: TextFormField(
                       obscureText: true,
@@ -213,7 +213,7 @@ class _ResetPasswordState extends State<ResetPassword> implements HttpCallBack {
                     padding: EdgeInsets.symmetric(horizontal: 10, vertical: 5),
                     decoration: BoxDecoration(
                         color: secondaryColor,
-                        border: Border.all(color: Colors.blue),
+                        border: Border.all(color: Color(0xffff7f00)),
                         borderRadius: BorderRadius.circular(20)),
                     child: TextFormField(
                       obscureText: true,
@@ -275,7 +275,7 @@ class _ResetPasswordState extends State<ResetPassword> implements HttpCallBack {
                             },
                           );
                         },
-                        color: logoGreen,
+                        color: Color(0xffff7f00),
                         child: Text(
                           'Reset',
                           style: GoogleFonts.openSans(
@@ -304,7 +304,7 @@ class _ResetPasswordState extends State<ResetPassword> implements HttpCallBack {
                           'Login',
                           textAlign: TextAlign.center,
                           style: GoogleFonts.openSans(
-                              color: logoGreen,
+                              color: Color(0xffff7f00),
                               fontSize: 14,
                               fontWeight: FontWeight.w700),
                         ),

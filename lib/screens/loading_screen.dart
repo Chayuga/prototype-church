@@ -11,8 +11,8 @@ class LoadingScreen extends StatefulWidget {
 }
 
 class _LoadingScreenState extends State<LoadingScreen> {
-  var churchName = "DELIVERANCE CHURCH UTAWALA";
-  var slogan = 'The Church of Choice';
+  var churchName = "CHRISTIANS CHURCH KENYA";
+  var slogan = 'We Believe in Jesus Christ';
   final Color primaryColor = Color(0xff18203d);
   @override
   void initState() {
@@ -43,9 +43,8 @@ class _LoadingScreenState extends State<LoadingScreen> {
                     mainAxisAlignment: MainAxisAlignment.center,
                     children: <Widget>[
                       Image(
-                        image: AssetImage('assets/images/dcu-logo.png'),
+                        image: AssetImage('assets/images/church.png'),
                         height: 80.0,
-                        width: 80.0,
                       ),
                       Padding(
                         padding: EdgeInsets.only(top: 10.0),

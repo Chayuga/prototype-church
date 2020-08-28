@@ -74,7 +74,7 @@ class _BookingStatusState extends State<BookingStatus> {
         leading: Padding(
           padding: const EdgeInsets.fromLTRB(8, 1, 1, 1),
           child: Image.asset(
-            'assets/images/dcu-logo.png',
+            'assets/images/church.png',
             fit: BoxFit.contain,
             height: 25,
           ),
@@ -133,8 +133,7 @@ class _BookingStatusState extends State<BookingStatus> {
                     children: <Widget>[
                       new Padding(
                           padding: new EdgeInsets.symmetric(vertical: 3.0)),
-                      new Text(
-                          'Selected Service : ${booked[index].service}'),
+                      new Text('Selected Service : ${booked[index].service}'),
                       new Padding(
                           padding: new EdgeInsets.symmetric(vertical: 3.0)),
                       new Text(
